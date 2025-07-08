@@ -1,0 +1,57 @@
+// base color
+$blue:#324157;
+$light-blue:#3A71A8;
+$red:#C03639;
+$pink: #E65D6E;
+$green: #30B08F;
+$tiffany: #4AB7BD;
+$yellow:#FEC171;
+$panGreen: #30B08F;
+
+// 默认菜单主题风格
+$base-menu-color:#558aa5; /* 菜单项颜色 */
+$base-menu-color-active:#cf7373; /* 激活菜单项颜色 */
+$base-menu-background:#616bf8; /* 主背景色 */
+$base-logo-title-color:  #58c3c7e7; /* 图标和文本颜色 */
+$base-menu-active-color:#5fc4c4;
+
+$base-menu-light-color:#eceef1;
+$base-menu-light-background:rgb(20, 135, 242);
+$base-logo-light-title-color: #ffffff;
+
+$base-sub-menu-background:#f7fdfd;
+$base-sub-menu-hover:#f8fafa;
+$base-sidebar-width: 200px;
+// 新增圆角变量
+$base-menu-border-radius: 8px 0 0 8px; /* 菜单圆角大小 */
+// 自定义暗色菜单风格
+/**
+$base-menu-color:hsla(0,0%,100%,.65);
+$base-menu-color-active:#fff;
+$base-menu-background:#001529;
+$base-logo-title-color: #ffffff;
+
+$base-menu-light-color:rgba(0,0,0,.70);
+$base-menu-light-background:#ffffff;
+$base-logo-light-title-color: #001529;
+
+$base-sub-menu-background:#000c17;
+$base-sub-menu-hover:#001528;
+*/
+
+$base-sidebar-width: 200px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuColor: $base-menu-color;
+  menuLightColor: $base-menu-light-color;
+  menuColorActive: $base-menu-color-active;
+  menuBackground: $base-menu-background;
+  menuLightBackground: $base-menu-light-background;
+  subMenuBackground: $base-sub-menu-background;
+  subMenuHover: $base-sub-menu-hover;
+  sideBarWidth: $base-sidebar-width;
+  logoTitleColor: $base-logo-title-color;
+  logoLightTitleColor: $base-logo-light-title-color
+}
